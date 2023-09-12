@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <title>AluraBank - Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/formulario/styles.css" />
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <h1 class="encabezado__logo-inicio">
+        Alura<span class="encabezado__logo-final">Bank</span>
+      </h1>
+      <ul class="encabezado-lista">
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__link">Sobre</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__link">Servicios</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <input
+            class="encabezado__buscar"
+            type="search"
+            placeholder="Buscar servicios"
+          />
+        </li>
+        <li class="encabezado-lista__item">
+          <a
+            href="./abrir-cuenta-form.html"
+            class="encabezado-lista__item-boton encabezado-lista__item-boton--azul"
+            >Abrir cuenta</a
+          >
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__item-boton"
+            >Acceder a la cuenta</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <h3 class="banner__titulo">
+        ¡Alura-cuenta es el primer paso hacia la libertad financiera!
+      </h3>
+    </section>
+
+    <main class="container">
+      <ul class="breadcrumb">
+        <li>Inicio</li>
+        <li class="breadcrumb__pagina">Abrir cuenta</li>
+      </ul>
+
+      <section class="formulario">
+        <div class="formulario__container">
+          <img
+            src="../img/status-1.png"
+            alt="Etapa uno de tres"
+            class="formulario__etapas"
+          />
+          <h2 class="formulario__titulo-texto">
+            ¡Completa los campos a continuación para crear tu cuenta corriente!
+          </h2>
+        </div>
+
+        <form class="principal__formulario" data-formulario>
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" class="campo__completo" />
+            <span class="mensaje-error"></span>
+          </fieldset>
+
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="email">E-mail</label>
+            <input name="email" id="email" class="campo__completo" />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="identificacion"
+              >Identificación</label
+            >
+            <input
+              name="identificacion"
+              id="identificacion"
+              class="campo__completo campo__completo--menor"
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="cuil"
+              >CUIL/CUIT (Solo números)</label
+            >
+            <input
+              name="cuil"
+              id="cuil"
+              class="campo__completo campo__completo--menor"
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="formulario__campo">
+            <label class="campo__etiqueta" for="fecha_nacimiento">
+              Fecha de nacimiento
+            </label>
+            <input
+              name="fecha_nacimiento"
+              id="fecha_nacimiento"
+              class="campo__completo campo__completo--menor"
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="formulario__terminos">
+            <input name="terminos" class="terminos__input" />
+            <p class="terminos__texto">
+              He leído y conozco las condiciones para el tratamiento de mis
+              datos descrito en las <a href="#">Políticas de Privacidad</a>.
+            </p>
+            <span class="mensaje-error"></span>
+          </fieldset>
+
+          <div>
+            <input
+              value="Siguiente"
+              class="formulario__boton"
+              id="enviar"
+              data-boton-enviar
+            />
+            <span class="mensaje-error"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="pie_pagina">
+      <section class="pie_pagina__empresa">
+        <h2 class="pie_pagina__titulo">AluraBank</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">Sobre</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Preguntas frecuentes</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Trayectoria</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__servicios">
+        <h2 class="pie_pagina__titulo">Servicios</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">Cuenta corriente</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Cuenta empresa</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Tarjeta de crédito</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__contato">
+        <h2 class="pie_pagina__titulo">Contacto</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">0800 444 ALURA</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">ayuda@alurabank.com</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">defensoria@alurabank.com</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__redes-sociales">
+        <h2 class="pie_pagina__titulo">Acceda a nuestras redes</h2>
+        <ul class="pie_pagina__lista redes-sociales__lista">
+          <li><img src="../img/facebook.png" alt="ícono de facebook" /></li>
+          <li><img src="../img/youtube.png" alt="ícono de youtube" /></li>
+          <li><img src="../img/whatsapp.png" alt="ícono de whatsapp" /></li>
+          <li><img src="../img/instagram.png" alt="ícono de instagram" /></li>
+        </ul>
+        <h2 class="pie_pagina__logo">
+          <span class="pie_pagina__logo--negrito">Alura</span>Bank
+        </h2>
+      </section>
+    </footer>
+  </body>
+</html>

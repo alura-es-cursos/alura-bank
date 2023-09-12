@@ -1,0 +1,147 @@
+.banner {
+    background-image: url("../../img/banner_cliente.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__titulo,
+.cuenta__titulo {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.banner__titulo {
+    width: 32%;
+    margin: 0 3em
+}
+
+.servicios__titulo,
+.beneficios__titulo {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.lista-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4em 0;
+}
+
+.item-servicios__titulo {
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding: .5em 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.item-servicios__imagen {
+    display: block;
+}
+
+.cuenta {
+    background-image: url("../../img/banner_gato.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.cuenta__container {
+    width: 80%;
+    margin-left: 4em;
+}
+
+.cuenta__boton {
+    display: block;
+    margin-top: .5em;
+    width: 50%;
+    text-align: center;
+    background: var(--black);
+    border-radius: 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0.5em;
+}
+
+.beneficios-lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4em;
+    text-align: center;
+}
+
+.beneficios-lista__item {
+    width: 20%;
+}
+
+.beneficios__icono {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.icono-presente {
+    background-image: url('../../img/presente.png');
+}
+
+.icono-retiro {
+    background-image: url('../../img/retiro.png');
+}
+
+.icono-estrella {
+    background-image: url('../../img/estrella.png')
+}
+
+.icono-gato {
+    background-image: url('../../img/gato.png')
+}
+
+.beneficios-lista__titulo {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--azul-claro);
+    margin: .5em 0;
+}
+
+@media screen and (max-width: 798px) {
+    .beneficios-lista {
+        display: block;
+        margin: 1em;
+    }
+
+    .beneficios-lista__item {
+        width: 100%;
+    }
+
+    .cuenta {
+        display: block;
+
+    }
+
+    .cuenta__titulo {
+        padding: 1em 0;
+    }
+}

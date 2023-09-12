@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <title>AluraBank - Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/formulario/styles.css" />
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <h1 class="encabezado__logo-inicio">
+        Alura<span class="encabezado__logo-final">Bank</span>
+      </h1>
+      <ul class="encabezado-lista">
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__link">Sobre</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__link">Servicios</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <input
+            class="encabezado__buscar"
+            type="search"
+            placeholder="Buscar servicios"
+          />
+        </li>
+        <li class="encabezado-lista__item">
+          <a
+            href="./abrir-cuenta-form.html"
+            class="encabezado-lista__item-boton encabezado-lista__item-boton--azul"
+            >Abrir cuenta</a
+          >
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__item-boton"
+            >Acceder a la cuenta</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <h3 class="banner__titulo">
+        ¡Alura-cuenta es el primer paso hacia la libertad financiera!
+      </h3>
+    </section>
+
+    <main class="container">
+      <ul class="breadcrumb">
+        <li>Inicio</li>
+        <li class="breadcrumb__pagina">Abrir cuenta</li>
+      </ul>
+
+      <section class="formulario">
+        <div class="formulario__container">
+          <img
+            src="../img/status-2.png"
+            alt="Etapa dos de tres"
+            class="formulario__etapas"
+          />
+          <h2 class="formulario__titulo-texto">Reconocimento facial</h2>
+          <p class="formulario__texto">
+            ¡Haga clic en la imagen de abajo para realizar la captura de su
+            imagen!
+          </p>
+
+          <img
+            src="../img/reconocimento.png"
+            alt="Cara con ojos y una sonrisa dentro de un marco."
+            data-video-boton
+            class="formulario__imagen"
+          />
+
+          <div class="formulario__camera" data-camera>
+            <video width="320" height="240" autoplay data-video></video>
+            <button class="camera__boton" data-tomar-foto>Tomar foto</button>
+          </div>
+
+          <div class="formulario__mensaje" data-mensaje>
+            <canvas width="320" height="240" data-video-canvas></canvas>
+            <img
+              src="../img/icon_check.png"
+              alt="Ícono de validación"
+              class="formulario__imagen"
+            />
+            <p>¡Eso es, imagen capturada!</p>
+
+            <a
+              href="#"
+              class="formulario__boton formulario__boton--enlace"
+              data-enviar
+              >¡Quiero abrir mi cuenta!</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie_pagina">
+      <section class="pie_pagina__empresa">
+        <h2 class="pie_pagina__titulo">AluraBank</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">Sobre</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Preguntas frecuentes</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Trayectoria</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__servicios">
+        <h2 class="pie_pagina__titulo">Servicios</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">Cuenta corriente</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Cuenta empresa</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Tarjeta de crédito</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__contato">
+        <h2 class="pie_pagina__titulo">Contacto</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">0800 444 ALURA</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">ayuda@alurabank.com</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">defensoria@alurabank.com</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__redes-sociales">
+        <h2 class="pie_pagina__titulo">Acceda a nuestras redes</h2>
+        <ul class="pie_pagina__lista redes-sociales__lista">
+          <li><img src="../img/facebook.png" alt="ícono de facebook" /></li>
+          <li><img src="../img/youtube.png" alt="ícono de youtube" /></li>
+          <li><img src="../img/whatsapp.png" alt="ícono de whatsapp" /></li>
+          <li><img src="../img/instagram.png" alt="ícono de instagram" /></li>
+        </ul>
+        <h2 class="pie_pagina__logo">
+          <span class="pie_pagina__logo--negrito">Alura</span>Bank
+        </h2>
+      </section>
+    </footer>
+  </body>
+</html>

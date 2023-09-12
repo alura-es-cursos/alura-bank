@@ -1,0 +1,75 @@
+.encabezado {
+    display: flex;
+    align-items: center;
+    margin: 2em 1em;
+}
+
+.encabezado-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+    font-size: 18px;
+    margin: 0 2em;
+}
+
+.encabezado__logo-inicio {
+    font-family: var(--fuente-logo);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--azul-claro);
+}
+
+.encabezado__logo-final {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.encabezado__buscar {
+    border: 2px solid #2f2f2f;
+    border-radius: 20px;
+    padding: .7em 1em;
+    width: 20vw;
+    outline: none;
+}
+
+.encabezado__buscar::placeholder {
+    font-size: 18px;
+    background: url("../img/icon_buscar.png") no-repeat 95% center;
+}
+
+.encabezado-lista__item a {
+    text-decoration: none;
+}
+
+.encabezado-lista__link {
+    color: var(--black);
+}
+
+.encabezado-lista__item-boton {
+    font-weight: 600;
+    border-radius: 20px;
+    padding: .5em 1em;
+    color: var(--azul-claro);
+    border: var(--azul-claro) 2px solid;
+}
+
+.encabezado-lista__item-boton--azul {
+    background-color: var(--azul-claro);
+    color: var(--white);
+}
+
+@media screen and (max-width: 900px) {
+    .encabezado {
+        margin: 2em;
+    }
+
+    .encabezado__buscar,
+    .encabezado-lista__link {
+        display: none;
+    }
+
+    .encabezado-lista__item-boton {
+        display: block;
+    }
+}

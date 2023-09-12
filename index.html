@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>AluraBank - Página inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/pagina-inicial/styles.css" />
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <h1 class="encabezado__logo-inicio">
+        Alura<span class="encabezado__logo-final">Bank</span>
+      </h1>
+      <ul class="encabezado-lista">
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__link">Sobre</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__link">Servicios</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <input
+            class="encabezado__buscar"
+            type="search"
+            placeholder="Buscar servicios"
+          />
+        </li>
+        <li class="encabezado-lista__item">
+          <a
+            href="./pages/abrir-cuenta-form.html"
+            class="encabezado-lista__item-boton encabezado-lista__item-boton--azul"
+            >Abrir cuenta</a
+          >
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="#" class="encabezado-lista__item-boton"
+            >Acceder a la cuenta</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <h3 class="banner__titulo">
+        ¡Autonomía y tranquilidad al mando de tu vida financiera!
+      </h3>
+    </section>
+
+    <section class="servicios">
+      <h2 class="servicios__titulo">Servicios</h2>
+      <ul class="lista-servicios">
+        <li class="item-servicios">
+          <img
+            class="item-servicios__imagen"
+            src="./img/tarjeta_credito.png"
+            alt="Una mujer sosteniendo una tarjeta de crédito"
+          />
+          <h3 class="item-servicios__titulo">Tarjeta de crédito</h3>
+        </li>
+        <li class="item-servicios">
+          <img
+            class="item-servicios__imagen"
+            src="./img/cuenta_corriente.png"
+            alt="Un hombre sentado con un cuaderno en su regazo"
+          />
+          <h3 class="item-servicios__titulo">Cuenta corriente</h3>
+        </li>
+        <li class="item-servicios">
+          <img
+            class="item-servicios__imagen"
+            src="./img/cuenta_empresa.png"
+            alt="Una mujer sosteniendo una tableta y un bolígrafo"
+          />
+          <h3 class="item-servicios__titulo">Cuenta empresa</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cuenta">
+      <div></div>
+      <div class="cuenta__container">
+        <h3 class="cuenta__titulo">
+            Crear tu cuenta con nosotros es fácil, rápido y sin complicaciones. ¡En la pantalla de tu computadora o celular!
+        </h3>
+        <a href="#" class="cuenta__boton">¡Quiero abrir mi cuenta!</a>
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <h2 class="beneficios__titulo">Más ventajas de nuestro banco:</h2>
+      <ul class="beneficios-lista">
+        <li class="beneficios-lista__item">
+          <span class="beneficios__icono icono-presente"></span>
+          <h3 class="beneficios-lista__titulo">Cuenta y tarjeta gratis</h3>
+          <p>
+            Así es, nuestra cuenta es digital, sin costo fijo y más que eso: sin cuota de mantenimiento.
+          </p>
+        </li>
+        <li class="beneficios-lista__item">
+          <span class="beneficios__icono icono-retiro"></span>
+          <h3 class="beneficios-lista__titulo">Retiros gratis</h3>
+          <p>
+            Puedes retirar gratis tantas veces como quieras de cualquier cajero automático.
+          </p>
+        </li>
+        <li class="beneficios-lista__item">
+          <span class="beneficios__icono icono-estrella"></span>
+          <h3 class="beneficios-lista__titulo">Programa de puntos</h3>
+          <p>
+            ¡Puedes acumular puntos con tus compras a crédito sin pagar
+            mensualidad!
+          </p>
+        </li>
+        <li class="beneficios-lista__item">
+          <span class="beneficios__icono icono-gato"></span>
+          <h3 class="beneficios-lista__titulo">Seguro Pet</h3>
+          <p>
+            Tus mascotas seguras y protegidas por una cuota mensual simbólica, además de
+            de descuentos en petshops de todo el país.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="pie_pagina">
+      <section class="pie_pagina__empresa">
+        <h2 class="pie_pagina__titulo">AluraBank</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">Sobre</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Preguntas frecuentes</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Trayectoria</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__servicios">
+        <h2 class="pie_pagina__titulo">Servicios</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">Cuenta corriente</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Cuenta Empresa</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">Tarjeta de crédito</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__contato">
+        <h2 class="pie_pagina__titulo">Contacto</h2>
+        <ul class="pie_pagina__lista">
+          <li>
+            <a href="#" class="pie_pagina__link">0800 444 ALURA</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">ayuda@alurabank.com</a>
+          </li>
+          <li>
+            <a href="#" class="pie_pagina__link">defensoria@alurabank.com</a>
+          </li>
+        </ul>
+      </section>
+      <section class="pie_pagina__redes-sociales">
+        <h2 class="pie_pagina__titulo">Acceda a nuestras redes</h2>
+        <ul class="pie_pagina__lista redes-sociales__lista">
+          <li><img src="./img/facebook.png" alt="ícono de facebook" /></li>
+          <li><img src="./img/youtube.png" alt="ícono de youtube" /></li>
+          <li><img src="./img/whatsapp.png" alt="ícono de whatsapp" /></li>
+          <li><img src="./img/instagram.png" alt="ícono de instagram" /></li>
+        </ul>
+        <h2 class="pie_pagina__logo">
+          <span class="pie_pagina__logo--negrito">Alura</span>Bank
+        </h2>
+      </section>
+    </footer>
+  </body>
+</html>
