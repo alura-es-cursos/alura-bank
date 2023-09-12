@@ -1,5 +1,3 @@
-/* Viene del aula Anterior */
-
 export default function esUnCUIT(campo) {
   const cuit = campo.value.replace(/\-/g, "");
   console.log(
@@ -47,11 +45,11 @@ function validarPrimerosDigitosCUIT(cuit) {
 }
 
 function validarDigitoVerificador(cuit) {
-  let digitoVerificador = Number(cuit.slice(-1)); //o substring
-  /* verificar en el video */
+  let digitoVerificador = Number(cuit.slice(-1));
+
   // console.log(digitoVerificador);
   let digitos = cuit.substr(0, 10).split("").map(Number);
-  /* verificar en el video */
+
   //console.log(digitos);
 
   let acumulado = 0;
