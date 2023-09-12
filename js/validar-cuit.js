@@ -1,5 +1,3 @@
-/* paso 1 crear el export default */
-
 export default function esUnCUIT(campo) {
   /* Reemplazamos la expresion regular por un espacio vacio */
   const cuit = campo.value.replace(/\-/g, "");
@@ -8,16 +6,6 @@ export default function esUnCUIT(campo) {
   console.log(tieneCaracteresRepetidos(cuit));
 }
 
-/* paso 4 crear la funcion numeros repetidos */
-/* version pro */
-/* function tieneCaracteresRepetidos(cuit) {
-    if (/^(\d)\1+$/.test(cuit)) {
-      return true;
-    }
-    return false;
-  }
-   */
-/* Version simple */
 function tieneCaracteresRepetidos(cuit) {
   const numerosRepetidos = [
     "00000000000",
