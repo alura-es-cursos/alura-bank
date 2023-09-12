@@ -1,4 +1,3 @@
-/* Viene del Aula Anteriror */
 import esUnCUIT from "./validar-cuit.js";
 import esMayorDeEdad from "./validar-edad.js";
 
