@@ -1,10 +1,8 @@
-/* Viene del Aula Anteriror */
 import esUnCUIT from "./validar-cuit.js";
 import esMayorDeEdad from "./validar-edad.js";
 import { tiposError, mensajes } from "./customErrors.js";
 
 const camposDeFormulario = document.querySelectorAll("[required");
-//Paso 1
 const formulario = document.querySelector("[data-formulario]");
 
 formulario.addEventListener("submit", (e) => {
@@ -20,7 +18,6 @@ formulario.addEventListener("submit", (e) => {
   window.location.href = "./abrir-cuenta-form-2.html";
 });
 
-//codigo anterior
 camposDeFormulario.forEach((campo) => {
   campo.addEventListener("blur", () => verificarCampo(campo));
   /* caputar evento invalid */
