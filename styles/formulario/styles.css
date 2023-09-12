@@ -126,6 +126,11 @@
 }
 
 .mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .925rem;
     color: red;
 }
 
