@@ -1,6 +1,5 @@
 export default function esMayorDeEdad(campo) {
   const fechaNacimiento = new Date(campo.value);
-  //mostrar primero
   //console.log(fechaNacimiento);
   validarEdad(fechaNacimiento);
   console.log(validarEdad(fechaNacimiento));
