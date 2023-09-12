@@ -9,14 +9,7 @@ export default function esUnCUIT(campo) {
 
     validarDigitoVerificador(cuit)
   );
-  /*   if (
-    tieneCaracteresRepetidos(cuit) &&
-    (validarPrimerosDigitosCUIT(cuit) && validarDigitoVerificador(cuit))
-  ) {
-    console.log("el cuit " + cuit + "  existe");
-  } else {
-    console.log("el cuit " + cuit + " NO existe!!!!");
-  } */
+
   if (!tieneCaracteresRepetidos(cuit)) {
     if (validarPrimerosDigitosCUIT(cuit) && validarDigitoVerificador(cuit)) {
       console.log("el Cuit existe");
@@ -28,15 +21,7 @@ export default function esUnCUIT(campo) {
   }
 }
 
-/* version pro */
-/* function tieneCaracteresRepetidos(cuit) {
-    if (/^(\d)\1+$/.test(cuit)) {
-      return true;
-    }
-    return false;
-  }
-   */
-/* Version simple */
+
 function tieneCaracteresRepetidos(cuit) {
   const numerosRepetidos = [
     "00000000000",
@@ -61,8 +46,6 @@ function validarPrimerosDigitosCUIT(cuit) {
   return digitosValidos.includes(primerosDigitos); // Verificar los primeros dos dígitos
 }
 
-/* paso 1  */
-//Validar digito verificador
 function validarDigitoVerificador(cuit) {
   let digitoVerificador = Number(cuit.slice(-1)); //o substring
   /* verificar en el video */
