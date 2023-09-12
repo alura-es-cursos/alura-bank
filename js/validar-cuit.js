@@ -1,4 +1,3 @@
-/* Viene del aula Anterior */
 export default function esUnCUIT(campo) {
   const cuit = campo.value.replace(/\-/g, "");
   if (!tieneCaracteresRepetidos(cuit)) {
@@ -14,15 +13,6 @@ export default function esUnCUIT(campo) {
   }
 }
 
-/* version pro */
-/* function tieneCaracteresRepetidos(cuit) {
-    if (/^(\d)\1+$/.test(cuit)) {
-      return true;
-    }
-    return false;
-  }
-   */
-/* Version simple */
 function tieneCaracteresRepetidos(cuit) {
   const numerosRepetidos = [
     "00000000000",
