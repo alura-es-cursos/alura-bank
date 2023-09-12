@@ -5,7 +5,7 @@ export default function esMayorDeEdad(campo) {
   console.log(validarEdad(fechaNacimiento));
 }
 
-//construir
+
 function validarEdad(fecha) {
   const fechaActual = new Date();
   const fechaMas18 = new Date(
